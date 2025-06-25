@@ -30,10 +30,7 @@ function Todofn(){
   }
   
 
-  useEffect(()=>{
-    console.log("component changed");
-    
-  },[newTask])
+
 
 
   const inpref = useRef(null)
@@ -87,16 +84,11 @@ function Todofn(){
         setNewTask(tasks[index])
         seteditindex(index)
       }
-      
-    
-
-
 
     return(
 <>
 <div className="to-do-list">
       <h1>To-Do List</h1>
-      <input type="text" name="" id="" ref={inpref} />
 
       <div className="input-box">
     <input
